@@ -232,7 +232,10 @@ a {
     padding: 15%;
     font-size: 1.2em;
     border: none;
-    border-radius: .5em;
+}
+
+.trail-card:hover {
+    color: rgba(255, 31, 31, 0.692);
 }
 
 .trail-card p {
@@ -264,6 +267,10 @@ a {
     margin: 3em 0;
 }
 
+.event-detail {
+    background: rgba(207, 207, 207, 0.466);
+}
+
 .event-detail img {
     width: 90vw;
 }
@@ -275,6 +282,7 @@ a {
 
 .event-location {
     text-align: center;
+    padding-bottom: 2em;
 }
 
 .outreaches {
