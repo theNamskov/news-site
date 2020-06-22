@@ -4,15 +4,51 @@
 }
 
 header {
-    background: green;
+    background: rgba(0, 0, 0, 0.774);
+    color: white;
+    padding: 2em 1em;
+}
+
+header p {
+    background: grey;
+    padding: 1em 3em;
+    height: 3vh;
+    margin: .1em auto;
+}
+
+.pad {
+    margin: 0 10vw;
 }
 
 ul {
     list-style-type: none;
 }
 
+h2 {
+    text-align: center;
+    margin: .5em 0;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
 a {
     text-decoration: none;
+}
+
+.brand {
+    font-size: 2.4em;
+    font-weight: bold;
+    height: 4em;
+}
+
+.brand:visited {
+    color: white;
+}
+
+.fa-list {
+    margin-left: 1.2em;
 }
 
 .header-links {
@@ -21,25 +57,336 @@ a {
     justify-content: space-evenly;
 }
 
-.header-sublinks {
+.header-sublinks  {
     display: none;
+}
+.sublink {
+    padding: .2em 1em;
+}
+
+
+.sublink a {
+    color: white;
+    font-size: 1.2em;
+}
+
+.sublink a:visited {
+    color: white;
+}
+
+.brand-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 1.2em 0;
+}
+
+.brand-info-card {
+    margin: 1em 0;
+}
+
+.brand-info-card img {
+    z-index: 1;
+}
+
+.brand-info-card figcaption {
+    box-sizing: border-box;
+    font-size: 1.1em;
+    font-weight: bold;
+    z-index: 3;
+    margin-top: -.4em;
+    color: rgba(255, 255, 255, 0.692);
+    background: rgba(0, 0, 0, 0.774); 
+    text-align: left;
+    width: 100%;
+    height: 2em;
+    padding: .4em;
+    border: none;
+    border-radius: .2em;
 }
 
 .separator {
-    height: 14px;
-    background: aqua;
+    height: .3em;
+    background: rgba(190, 120, 130, 190);
+    margin: 5% 10%;
+    border: none;
+    border-radius: .3em;
+}
+
+.news-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.latest-news-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.latest-news-card img {
+    border: none;
+    border-radius: .2em;
+}
+
+.latest-news-card figcaption {
+    padding: .4em 0 1em 0;
+}
+
+.timestamp span {
+    padding: .2em 1em;
 }
 
 .separator-sm {
-    height: 8px;
-    background: aqua;
+    height: .1em;
+    width: 100%;
+    margin: 2em;
+    background-color: rgba(190, 120, 130, 30);
+    border: none;
+    border-radius: 1em;
 }
 
 .numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
     color: white;
-    background-color: rgba(190, 120, 130, 100);
+    background-color: rgb(220, 160, 170, 9);
+}
+
+.team-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.team-member figcaption {
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+}
+
+.team-member p {
+    padding: .5em 0;
+}
+
+.member-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.position {
+    font-size: 1.3em;
+}
+
+.number-data {
+    margin: 1em 0;
+}
+
+.events-trail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trail-card {
+    box-sizing: border-box;
+    background: rgba(207, 207, 207, 0.466);
+    width: 80%;
+    min-height: 20vh;
+    padding: 15%;
+    font-size: 1.2em;
+    border: none;
+    border-radius: .5em;
+}
+
+.trail-card p {
+    padding: .4em .2em;
+}
+
+.trail-timestamp {
+    font-size: .8em;
+}
+
+.trail-card i {
+    margin: .4em .3em 0 0;
+}
+
+.trail-card span {
+    font-size: .7em;
+}
+
+.connector {
+    background: rgba(207, 207, 207, 0.466);
+    height: 1em;
+    margin-left: -12em;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em 0;
+}
+
+.event-detail figcaption {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.event-location {
+    text-align: center;
+}
+
+.outreaches {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.movement-card {
+    margin: 1em auto;
+    background: rgba(207, 207, 207, 0.466);
+    padding: 0 0 1em 0;
+    width: 89%;
+}
+
+.movement-img img {
+    width: 100%;
+    border: none;
+    border-radius: .2em;
+    min-height: 24vh;
+}
+
+.movement-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: .5em;
+}
+
+figcaption {
+    width: 70%;
+    margin: .2em auto;
+}
+
+.movement-donate {
+    border: none;
+    border-radius: .3em;
+    background: rgb(52, 64, 70);
+    color: white;
+    height: 5vh;
+    width: 40vw;
+    margin: 2em;
 }
 
 footer {
-    background: yellow;
+    display: flex;
+    flex-direction: column;
+    background: rgb(51, 51, 51);
+    color: #fdfdfa;
+}
+
+.sect .fa {
+    margin-left: -2.9em;
+}
+
+.sect p {
+    text-align: left;
+    padding: .4em 0;
+}
+
+.sect-latest-blogs, .sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.latest-blog-card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.latest-blog-card img {
+    width: 40%;
+    margin: 1em;
+}
+
+.blog-caption p {
+    padding: .8em;
+    font-size: .9em;
+}
+
+.mail-socials {
+    margin: 2em auto 0 auto;
+    background: rgb(29, 29, 29);
+    width: 95%;
+    height: 30vh;
+}
+
+.mail-form {
+    width: 95%;
+    margin: 2em  auto;
+    height: 5vh;
+}
+
+.mail {
+    border: none;
+    height: 100%;
+    border-radius: .2em;
+    width: 68%;
+    background: rgb(68, 68, 68);
+}
+
+.mail::placeholder {
+    font-size: 1.2em;
+    padding-left: 1em;
+    color: rgb(214, 214, 214);
+}
+
+.submit-mail {
+    border: none;
+    background-color: rgba(255, 31, 31, 0.692);
+    height: 100%;
+    border-radius: .2em;
+    width: 30%;
+    color: rgb(192, 182, 182);
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.social-text {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 1em;
+}
+
+.foot {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 3vh 0;
+    background: black;
+    height: 10vh;
 }
