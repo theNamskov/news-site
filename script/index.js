@@ -1,7 +1,7 @@
 const headerLink = document.querySelector('.menu');
 const headerLinks = document.querySelectorAll('.header-link');
 
-const menuTrigger = document.querySelector('.fa-list');
+const menuTrigger = document.getElementById('menu-toggler');
 
 console.log(menuTrigger, headerLink);
 
@@ -12,7 +12,6 @@ menuTrigger.addEventListener('click', e => {
     menuIsTriggered = !menuIsTriggered;
     console.log(menuIsTriggered);
     if(menuIsTriggered) {
-        // headerLink.classList.toggle('.header-links-off');
         headerLink.style.display = 'block';
         headerLink.classList.toggle('.header-links');
     } else {
