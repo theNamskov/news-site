@@ -3,21 +3,28 @@
     padding: 0;
 }
 
+body {
+    font-family: 'roboto-regular';
+}
+
 header {
     background: rgba(0, 0, 0, 0.774);
     color: white;
     padding: 2em 1em;
+    box-sizing: border-box;
 }
 
 header p {
     background: grey;
-    padding: 1em 3em;
+    padding: 1em 0 1em 3em;
     height: 3vh;
     margin: .1em auto;
 }
 
-.pad {
-    margin: 0 10vw;
+.horz {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
 }
 
 ul {
@@ -38,9 +45,9 @@ a {
 }
 
 .brand {
-    font-size: 2.4em;
+    font-size: 1.8em;
     font-weight: bold;
-    height: 4em;
+    height: 2em;
 }
 
 .brand:visited {
@@ -48,7 +55,13 @@ a {
 }
 
 .fa-list {
-    margin-left: 1.2em;
+    margin-left: 1em;
+}
+
+.menu {
+    display: none;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .header-links {
@@ -60,6 +73,7 @@ a {
 .header-sublinks  {
     display: none;
 }
+
 .sublink {
     padding: .2em 1em;
 }
@@ -323,11 +337,11 @@ footer {
 
 .latest-blog-card img {
     width: 40%;
-    margin: 1em;
+    margin: 1em 4%;
 }
 
 .blog-caption p {
-    padding: .8em;
+    padding: .8em 4%;
     font-size: .9em;
 }
 
@@ -389,4 +403,31 @@ footer {
     padding: 3vh 0;
     background: black;
     height: 10vh;
+}
+
+
+
+@keyframes extrudeY {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(100%);
+    }
+}
+
+@keyframes intrudeY {
+    from {
+        transform: scaleY(100%);
+    }
+    to {
+        transform: scaleY(0);
+    }
+}
+
+@font-face {
+    src: url('../asset/font/Roboto-Regular.ttf');
+    font-style: normal;
+    font-family: 'roboto-regular';
+    font-display: swap;
 }
