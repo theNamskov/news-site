@@ -98,10 +98,12 @@ a {
 
 .brand-info-card {
     margin: 1em 0;
+    width: 90%;
 }
 
 .brand-info-card img {
     z-index: 1;
+    width: 90vw;
 }
 
 .brand-info-card figcaption {
