@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: green;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.header-sublinks {
+    display: none;
+}
+
+.separator {
+    height: 14px;
+    background: aqua;
+}
+
+.separator-sm {
+    height: 8px;
+    background: aqua;
+}
+
+.numbers {
+    color: white;
+    background-color: rgba(190, 120, 130, 100);
+}
+
+footer {
+    background: yellow;
+}
