@@ -1,13 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
-body {
-    font-family: 'roboto-regular';
-}
-
-header {
+header, .dropdown-menu {
     background: rgba(0, 0, 0, 0.774);
     color: white;
     padding: 2em 1em;
@@ -449,4 +446,32 @@ footer {
     font-style: normal;
     font-family: 'roboto-regular';
     font-display: swap;
+}
+
+@media screen and (max-width: 992px) {
+    #top-navbar {
+      text-align: center;
+    }
+
+    #top-navbar .horz a {
+        margin-left: 42%;
+    }
+
+    .link-line {
+        display: none;
+    }
+
+    .dropdown-menu {
+        background-color: inherit;
+        text-align: center;
+    }
+  }
+
+#top-navbar a{
+    text-decoration: none;
+}
+
+.link-line {
+    border-top: 2px dotted;
+    color: inherit;
 }
